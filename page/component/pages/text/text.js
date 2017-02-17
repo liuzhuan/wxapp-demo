@@ -20,7 +20,7 @@ Page({
     canAdd: true,
     canRemove: false
   },
-  extraLine: [],
+  extraLine: [], // 可以自定义内存变量，不用于绑定视图元素
   add: function(e) {
     var that = this;
     this.extraLine.push(texts[this.extraLine.length % 12])
@@ -29,11 +29,6 @@ Page({
       canAdd: this.extraLine.length < 12,
       canRemove: this.extraLine.length > 0
     })
-    setTimeout(function(){
-      that.setData({
-        scrollTop: 99999
-      });
-    }, 0)
   },
   remove: function(e) {
     var that = this;
@@ -45,10 +40,5 @@ Page({
         canRemove: this.extraLine.length > 0,
       })
     }
-    setTimeout(function(){
-      that.setData({
-        scrollTop: 99999
-      });
-    }, 0)
   }
 })
