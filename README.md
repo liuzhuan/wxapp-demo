@@ -5,5 +5,9 @@
 
 相比于官方代码，删去了一些多余代码，使代码更易理解。
 
+扫描下图，可以直接体验官方 demo
+
+![wx app demo](image/wxapp-demo.jpeg)
+
 ## Referece
 - [体验小程序·小程序](https://mp.weixin.qq.com/debug/wxadoc/dev/demo.html)
